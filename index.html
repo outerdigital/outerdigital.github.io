@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      html {
+        text-align: center;
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "AvenirNext-DemiBold", sans-serif;
+        color: #777;
+      }
+
+      /* Font Awesome Icons */
+      .fa {
+        padding: 5px;
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-facebook {
+        background: #3b5998;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55acee;
+        color: white;
+      }
+
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+
+      /* Outer Digital CSS */
+      .bgimg {
+        height: 100%;
+        background-image: url("./assets/background.jpg");
+        position: relative;
+        opacity: 0.9;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .caption {
+        position: absolute;
+        left: 0;
+        top: 45%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+      }
+
+      .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 20px;
+        font-size: 28px;
+        letter-spacing: 10px;
+      }
+
+      .button {
+        background-color: transparent;
+        border-color: white;
+        color: #ffffff;
+        text-align: center;
+        font-size: 28px;
+        padding: 18px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .button span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .button:hover span {
+        padding-right: 25px;
+      }
+
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      .clients {
+        padding-top: 24px;
+        background-color: rgb(31, 31, 31);
+        color: rgb(196, 195, 195);
+        border-style: solid;
+        border-width: 0px;
+        border-bottom-width: 3px;
+        border-bottom-color: gainsboro;
+      }
+
+      .clients h2 {
+        margin: 0;
+      }
+
+      .clients-grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1px 1px;
+        grid-template-areas: ". . ." ". . .";
+      }
+
+      .clients-grid-container button {
+        border-color: transparent;
+        color: gray;
+        font-size: 24px;
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+
+      .footer {
+        color: white;
+        background-color: rgb(31, 31, 31);
+        padding: 12px;
+      }
+
+      .footer .social-networks {
+        margin: 12px;
+      }
+    </style>
+    <title>Outer Digital</title>
+  </head>
+  <body>
+    <!-- First Section -->
+    <div class="bgimg">
+      <div class="caption">
+        <span class="border">The conversation that will calm your chaos.</span>
+        <br />
+        <br />
+        <br />
+        <form action="https://wa.me/528114818459" method="get" target="_blank">
+          <button type="submit" class="button">
+            <span>Let's talk</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Clients -->
+    <div class="clients">
+      <h2>Our Clients</h2>
+      <div class="clients-grid-container">
+        <h3>Samsung NEXT</h3>
+        <h3>Kik Interactive</h3>
+        <h3>MediaLab.AI</h3>
+        <h3>CloudSourceIT</h3>
+        <form action="https://wa.me/528114818459" method="get" target="_blank">
+          <button type="submit" class="button">
+            <span>?</span>
+          </button>
+        </form>
+        <h3>Co'munity Business</h3>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>hello@outerdigital.space</p>
+
+      <!-- Social Networks -->
+      <div class="social-networks">
+        <a href="https://twitter.com/outerdigital" class="fa fa-twitter"></a>
+        <a href="https://linkedin.com/outerdigital" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+  </body>
+</html>
